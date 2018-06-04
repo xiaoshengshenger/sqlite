@@ -22,7 +22,7 @@
     NSString* filename=[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]stringByAppendingPathComponent:@"shop.sqlite"];
     
     int status=sqlite3_open(filename.UTF8String, &db);
-    if(status == SQLITE_OK)//枚举值SQLITE_OK，代表成功的状态
+    if(status == SQLITE_OK)//枚举值SQLITE_OK，代表成功
     {
         NSLog(@"打开数据库成功");
         NSLog(@"%@",filename);
